@@ -5,11 +5,7 @@ let timeLimits = {};
 
 // Load time limits from storage on initialization
 chrome.storage.local.get(["timeLimits"], (result) => {
-  timeLimits = result["timeLimits"] || {
-    "www.twitter.com": { timeLimit: 3600, resetTimerInterval: 3600 },
-    "www.facebook.com": { timeLimit: 10, resetTimerInterval: 3600 },
-    "www.youtube.com/shorts": { timeLimit: 10, resetTimerInterval: 3600 },
-  };
+  timeLimits = result["timeLimits"] || {};
   chrome.storage.local.set({ timeLimits: timeLimits }, () => {
     timeLimits = timeLimits;
   });
