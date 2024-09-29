@@ -3,7 +3,7 @@
   "longName": "Stop Doomscroll",
   "description": "Limit your time and scrolling on distracting websites with time limits and real-time scroll monitoring.",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "scripts": {
     "format": "prettier --write \"./src/**/*.ts\" \"./src/**/*.tsx\"",
     "check-format": "prettier --check \"./src/**/*.ts\" \"./src/**/*.tsx\"",
